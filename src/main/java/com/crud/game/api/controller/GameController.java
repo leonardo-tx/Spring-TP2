@@ -54,7 +54,7 @@ public class GameController {
     }
 
     @PutMapping("/{id}")
-    public ResponseEntity<ApiResponse<GameViewDTO>> updateOrAddGame(
+    public ResponseEntity<ApiResponse<GameViewDTO>> updateGame(
             @PathVariable("id") Long id,
             @RequestBody GameFormDTO form
     ) {
